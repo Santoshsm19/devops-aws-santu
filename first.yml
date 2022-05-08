@@ -1,0 +1,9 @@
+---
+- name: This is a sample playbook
+  hosts: ans
+
+  tasks:
+    - name: create a testfile.txt on target machines
+      copy:
+        content: hello world
+        dest: /tmp/testfile.txt
